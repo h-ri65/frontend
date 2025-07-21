@@ -1,233 +1,153 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+            height:500px;
+        }
+
+        .resume-container {
+            background: grey;
+            max-width: 500px;
+            height:700;
+            margin: auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+
+        }
+
+        .resume-pic {
+            flex: 1;
+            text-align: center;
+        }
+
+        .resume-pic img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ccc;
+        }
+
+        .resume-pic p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .resume-content {
+        margin-left:70px;
+            flex: 9;
+        }
+
+        .resume-content h1 {
+            margin-bottom: 5px;
+            font-size: 28px;
+        }
+
+        .resume-content h2 {
+            font-size: 18px;
+            color: #666;
+            margin-top: 0;
+        }
+
+        .resume-content section {
+            margin-bottom: 20px;
+        }
+
+        .resume-content h3 {
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .resume-content p, li {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+    </style>
 </head>
-<hr>
-<body style="background-color:grey;" >
-<nav class="navbar navbar-expand-lg bg-body-tertiary" style="margin-top:20px;color:#A0613D;">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img style="height:50px; width:70px;" src="fenriz%20logo.jpg">FENRIZ</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">T-shirts</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Jackets</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Hoodies</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                    </ul>
-                </li>
+<body>
 
+<div class="resume-container">
+    <div class="resume-pic">
+        <img src="frnt.png" alt="Profile Picture">
+        <p>Hari</p>
+    </div>
+
+    <div class="resume-content">
+        <h1>HARI</h1>
+        <h2>Web Developer</h2>
+
+        <section>
+            <h3>Contact</h3>
+            <p>Email: harinarayanan75588@gmail.com</p>
+            <p>Phone: 7558851987</p>
+        </section>
+
+        <section>
+            <h3>Profile</h3>
+            <p>software developer fresher</p>
+        </section>
+
+        <section>
+            <h3>Skills</h3>
+            <ul>
+                <li>Java</li>
+                <li>HTML, CSS</li>
+                <li>React, Node.js</li>
+                <li>UI/UX Design</li>
             </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-        </div>
-    </div>
-</nav>
-</div>
+        </section>
+        <section STYLE="color:black; margin-left:-260px;">
+            <h3>PROJECTS</h3>
+            <ul >
+                <h2>Accident detection using CNN</h2>
+                <li><p>we propose an effective system to minimize the response time by integrating Accident Dete
+                    ction and Smart Traffic System. Our Accident Detection module uses a Convolutional Neural
+                    Network (CNN) for real-time analysis of camera feeds in pre-identified accident-prone areas</p></li>
+                <li>effective in acting on accidents</li>
+                <li>decreace casuality during accidents</li>
+            </ul>
+        </section>
 
-<div id="carouselExampleIndicators" class="carousel slide">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img style="height:600px;"   src="fenriz-nw.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img style="height:600px;" src="fenriz-oo.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img style="height:600px;" src="fenriz-03.jpg" class="d-block w-100" alt="...">
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-3" style="background-color:#DC924D; color:white; padding:20px;">
-            MENS
-        </div>
-        <div class=" row col-sm-6" >
-            <div class="col" style="background-color:#B67840; color:white; padding:20px;">
-                WOMENS
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="col" style="background-color:#8F5F32; color:white; padding:20px;">
-                KIDS
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
             </div>
-
-
-        </div>
-        <div class="col-3" style="background-color:#432C17; color:white; padding:20px;">
-            FORMALS
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </div>
 </div>
-<br>
-<div class="row">
-    <div class="col-3" style="background-color:#DC924D; color:white; padding:20px;">
-        <div class="card" style="width: 18rem;">
-            <img src="mens.jpg" class="card-img-top" alt="..." style="background-color:grey;">
-            <div class="card-body">
-                <h5 class="card-title">MENS</h5>
-                <p class="card-text">Find best of mens clothing here,GO EXPLORE</p>
-                <a href="mens.html" class="btn btn-primary" style="background-color:orange;">EXPLORE</a>
-            </div>
-        </div>
-    </div>
-    <div class=" row col-sm-6" >
-        <div class="col" style="background-color:#B67840; color:white; padding:20px;">
-            <div class="card" style="width: 18rem;">
-                <img src="womens.jpg" class="card-img-top" alt="..." style="background:rgba(150, 150, 150, 0.1);
-                                                                            backdrop-filter: blur(8px);
-                                                                            -webkit-backdrop-filter: blur(8px);">
-                <div class="card-body">
-                    <h5 class="card-title">WOMENS</h5>
-                    <p class="card-text">Explore to see more of womens clothing here.</p>
-                    <a href="womens.html" class="btn btn-primary" style="background-color:orange;">EXPLORE</a>
-                </div>
-            </div>
-        </div>
-        <div class="col" style="background-color:#8F5F32; color:white; padding:20px;">
-            <div class="card" style="width: 18rem;">
-                <img src="kids.webp" class="card-img-top" alt="..." style="height:28rem;">
-                <div style="background:rgba(224, 196, 143, 0.1);
-                            backdrop-filter: blur(8px);
-                            -webkit-backdrop-filter: blur(8px);" class="card-body">
-                    <h5 class="card-title">KIDS</h5>
-                    <p class="card-text">Make your child's wardobe brighter with us.</p>
-                    <a href="#" class="btn btn-primary" style="background-color:orange;">EXPLORE</a>
-                </div>
-            </div>
-        </div>
 
-
-    </div>
-    <div class="col-3" style="background-color:#432C17; color:white; padding:20px;">
-        <div class="card" style="width: 18rem;">
-            <img src="formals.jpg" class="card-img-top" alt="..." style="height:28rem;">
-            <div class="card-body" style="background:rgba(150, 150, 150, 0.1);
-                                          backdrop-filter: blur(8px);
-                                         -webkit-backdrop-filter: blur(8px);">
-                <h5 class="card-title">FORMALS</h5>
-                <p class="card-text">Formal wear, but make it fashion,GO EXPLORE.</p>
-                <a href="#" class="btn btn-primary" style="background-color:orange;">EXPLORE</a>
-            </div>
-        </div>
-    </div>
-</div>
-<hr>
-<!-- banner 2 -->
-<div id="carouselExampleDark" class="carousel carousel-dark slide">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-            <img src="mensf%201.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Tops In Mens Fashion</h5>
-
-            </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-            <img src="mensf%202.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h5 style="color:white;">Tops In Mens Fashion</h5>
-
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="mensf%203.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h5 style="color:white;">Top In Mens Fashion
-                </h5>
-
-            </div>
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
-
-
-<footer class="row">
-    <div class="footer-container">
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-2" style="background-color:grey; color:black; padding:20px;">
-                    <h3>ShopSmart</h3>
-                    <p>Your one-stop shop for all things fashion, electronics, and more.</p>
-                </div>
-                <div class=" row col-sm-8" >
-                    <div class="col" style="background-color:grey; color:black; padding:20px; margin-left:150px;">
-                        <h3>Quick Links</h3>
-                        <div style="color:yellow;">
-                        <p style="color:yellow;"><a href="#">Home</a></p>
-                        <p style="color:yellow;"><a href="#">Shop</a></p>
-                        <p><a href="#">Deals</a></p>
-                        <p><a href="#">Contact</a></p>
-                        </div>
-                    </div>
-                    <div class="col" style="background-color:grey; color:black;margin-left:150px; padding:20px;">
-                        <h3>Customer Service</h3>
-                        <p><a href="#">FAQ</a></p>
-                        <p><a href="#">Returns</a></p>
-                        <p><a href="#">Shipping</a></p>
-                        <p><a href="#">Track Order</a></p>
-                    </div>
-                    <div class="col" style="background-color:grey; color:black; padding:20px;">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-
-                </div>
-                <div class="col-2" style="background-color:grey; color:black; padding:20px;">
-                    © 2025 ShopSmart. All Rights Reserved.
-                </div>
-            </div>
-        </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
-</html>>
+</html>
