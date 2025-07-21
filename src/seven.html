@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Box with Two Partitions</title>
+
+    <style>
+        .container {
+          width: 800px;
+          height: 400px;
+          border: 10px solid #333;
+          display: flex;
+
+           justify-content: center;
+   align-items: center;
+        }
+
+        .partition {
+          flex: 45;
+          border-right: 7px solid #ccc;
+          padding: 10px;
+          box-sizing: border-box;
+        }
+
+        .partition:last-child {
+          border-right: none; /* Remove border from the last partition */
+        }
+    </style>
+</head>
+<body style= "justify-content: center;
+      align-items: center;margin-top:150px;margin-left:400px;">
+
+<div class="container">
+    <div class="partition">
+        <h3>Left Partition</h3>
+        <table style="height=200;width:300;" border="5">
+            <thead>
+            <th>Car</th>
+            <th>model</th>
+            <th>brand</th>
+            <th>color</th>
+            <th>pic</th>
+            </thead>
+            <tbody>
+            <tr>
+                <td>polo</td>
+                <td>GT</td>
+                <td>volkswagon</td>
+                <td> red</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Golf</td>
+                <td>GTI</td>
+                <td>volkswagon</td>
+                <td>grey</td>
+                <td><a href="res2.webp"> g </a></td>
+            </tr>
+            <tr>
+                <td>Land cruiser</td>
+                <td>200</td>
+                <td>toyota</td>
+                <td>white</td>
+                <td><a href="res3.webp"> resume </a></td>
+            </tr>
+            </tbody></table>
+    </div>
+    <div class="partition">
+        <h3>Right Partition</h3>
+        <table border="5">
+            <thead>
+            <th>phone</th>
+            <th>brand</th>
+            <th>model</th>
+            <th>color</th>
+            <th>pic</th>
+            </thead>
+            <tbody>
+            <tr>
+                <td>i phone</td>
+                <td>apple</td>
+                <td>15 pro</td>
+                <td> natural titanium</td>
+                <td>pic</td>
+            </tr>
+            <tr>
+                <td>oppo</td>
+                <td>oppo</td>
+                <td>A15</td>
+                <td> black</td>
+                <td><a href="res2.webp"> resume </a></td>
+            </tr>
+            <tr>
+                <td>s series</td>
+                <td>samsng</td>
+                <td>s25</td>
+                <td> grey</td>
+                <td>pic</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>

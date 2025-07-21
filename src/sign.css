@@ -1,0 +1,105 @@
+ body {
+   font-family: Arial, sans-serif;
+   background-color: #f4f4f4;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+
+   background: url('bg.jpg') no-repeat center center fixed;
+     background-size: cover;
+
+ }
+
+
+ .signup-container {
+
+     background:rgba(150, 150, 150, 0.1)
+;      /* 50% transparent white */
+     backdrop-filter: blur(8px);                /* blur for glassy/watery effect */
+     -webkit-backdrop-filter: blur(8px);
+   padding: 30px;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+   width: 300px;
+ }
+
+ .signup-container h2 {
+   text-align: center;
+   margin-bottom: 20px;
+   color:orange;
+
+ }
+
+ .signup-container input[type="text"],
+ .signup-container input[type="email"],
+ .signup-container input[type="password"]
+  {
+   width: 100%;
+   padding: 10px;
+   margin: 8px 0;
+   border-radius: 5px;
+   border: 1px solid #ccc;
+ }
+
+ .signup-container button {
+  margin-top:15px;
+   width: 100%;
+   padding: 10px;
+   background-color: #FF8C00;
+   border: none;
+   color: white;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+ }
+
+ .signup-container button:hover {
+   background-color: #FFA500;
+ }
+#hr1
+{
+width: 25%;
+}
+.dropdown {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  /* transperncy*/
+   background: rgba(255, 255, 255, 0.5);      /* 50% transparent white */
+   backdrop-filter: blur(8px);                /* blur for glassy/watery effect */
+  -webkit-backdrop-filter: blur(8px);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dropdown:hover {
+  border-color: orange;
+  text-color:white;
+  background: rgba(255, 255, 255, 0.5);      /* 50% transparent white */
+  backdrop-filter: blur(8px);                /* blur for glassy/watery effect */
+  -webkit-backdrop-filter: blur(8px);/* green border on hover */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: orange       /* subtle lighter background on hover */
+}
+
+.dropdown:focus {
+  border-color: orange;
+  outline: orange;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+   background: rgba(255, 255, 255, 0.2);      /* 50% transparent white */
+   backdrop-filter: blur(8px);                /* blur for glassy/watery effect */
+  -webkit-backdrop-filter: blur(8px);
+}
+#hed{
+position: absolute;
+  top: 20px;      /* distance from the top */
+  left: 20px;     /* distance from the left */
+  margin: 0;
+  font-size: 54px;
+  color:#F5F5F5;
+  font-family: 'Georgia', serif;
+}

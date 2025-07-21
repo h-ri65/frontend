@@ -1,0 +1,74 @@
+ body {
+   font-family: Arial, sans-serif;
+   background-color: #f4f4f4;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+
+
+
+ }
+.one
+{
+   height:700px;
+   width:400px;
+  background-color:rgba(222, 184, 135,0.4);
+  margin:80px;
+  position:absolute;
+  border:3px solid black;
+
+ margin-bottom:100px;
+ align-item:center;
+backdrop-filter: blur(8px);                /* blur for glassy/watery effect */
+     -webkit-backdrop-filter: blur(8px);
+}
+.three
+{
+   height:800px;
+   width:500px;
+  background: url('cfe.jpg') no-repeat center center fixed;
+          background-size: cover;
+  margin:80px;
+  position:absolute;
+  border:5px solid black;
+
+ margin-bottom:100px;
+ align-item:center;
+
+}
+.for
+{
+height:90px;
+width:300px;
+margin-left:10px;
+margin-top:5px;
+border:3px solid black;
+align-item:left;
+padding:20px;
+ font-family: , sans-serif;
+ color:rgb(0, 15, 15);
+}
+.for2
+{
+
+height:90px;
+width:300px;
+margin-left:46px;
+margin-top:5px;
+border:3px solid black;
+align-item:left;
+padding:20px;
+}
+.for3
+{
+height:90px;
+width:300px;
+margin-left:10px;
+margin-top:5px;
+border:3px solid black;
+align-item:left;
+padding:20px;
+
+}
+

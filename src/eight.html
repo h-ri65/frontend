@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bigger Tables in Boxes</title>
+    <style>
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+          margin: 0;
+          background-color:grey;
+          font-family: Arial, sans-serif;
+        }
+
+        .box-container {
+          display: flex;
+          gap: 40px;
+        }
+
+        .box {
+          background-color:#4E3524;
+          padding: 20px;
+          border: 3px solid #333;
+          border-radius: 15px;
+          width: 450px;
+          height: 450px;
+          box-shadow: 4px 4px 15px rgba(0,0,0,0.2);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+
+        table {
+          border-collapse: collapse;
+          width: 100%;       /* table fills the box horizontally */
+          height: 100%;      /* table fills the box vertically */
+          text-align: center;
+          background-color:grey;
+        }
+
+        th, td {
+          border: 2px solid #333;
+          padding: 20px;      /* bigger padding for larger cells */
+          font-size: 18px;    /* bigger text */
+        }
+
+        th {
+          background-color: #e0e0e0;
+          font-weight: bold;
+        }
+
+        h3 {
+          margin-bottom: 10px;
+          font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box-container">
+
+    <div class="box">
+        <h3>CAR</h3>
+        <table STYLE="color:#4E3524;">
+            <tr>
+                <th>CAR</th>
+                <th>MODEL</th>
+                <th>COLOR</th>
+            </tr>
+            <tr>
+                <td>POLO</td>
+                <td>High line</td>
+                <td>RED</td>
+            </tr>
+            <tr>
+                <td>LC</td>
+                <td>200</td>
+                <td>white</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="box">
+        <h3>PHONES</h3>
+        <table STYLE="color:#4E3524;">
+            <tr>
+                <th>PHONE</th>
+                <th>MODEL</th>
+                <th>COLOR</th>
+            </tr>
+            <tr>
+                <td>APPLE</td>
+                <td>15pro</td>
+                <td>Natural taitanium</td>
+            </tr>
+            <tr>
+                <td>Samsung</td>
+                <td>s25</td>
+                <td>Black</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>
